@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>自己紹介</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    margin: 0;
+    color: white;
+}
+.heading-11 {
+    position: relative;
+    padding: .5em .7em;
+    background-color: #434343;
+    color: #fff;
+    width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heading-11::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-bottom: solid 10px transparent;
+    border-right: solid 20px #48414c;
+    content: '';
+}
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+}
+
+.box {
+    background: white;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.button:hover {
+    background: #5a67d8;
+}
+
+.work{
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.work-img{
+    width:250px;
+    border-radius:10px;
+}
+
+.work-text{
+    text-align:left;
+}
+
+.skill-group ul {
+    list-style-position: inside;  /* 点を文字のすぐ横に表示 */
+    padding-left: 0;              /* 左端の余白を削除 */
+}
+
+.skill-group li {
+    margin-bottom: 8px;           /* 行間を少し空ける */
+}
+
+.skill-group li small {
+    display: block;               /* liの下に表示 */
+    color: #555;                  /* 薄めの色 */
+    font-size: 12px;
+    margin-top: 2px;              /* 上との隙間 */
+}
+.career-list {
+    list-style: none; /* ●を消す */
+    padding-left: 0;  /* 左の余白を消す */
+}
+
+.career-list li {
+    margin-bottom: 5px; /* 行間を少し空ける */
+}.video {
+    width: 300px;      /* 好きなサイズに調整 */
+    border-radius: 10px;
+    margin-top: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>SONOKA SHIGA</h1>
+
+<div class="box">
+<h2 class="heading-11">自己紹介</h2>
+<img src="kao.jpg" class="work-img">
+<p>
+IT分野に興味を持ち、現在大学で情報通信技術やプログラミングを学習しています。<br>
+また、Pythonを用いたアプリ制作を行い、実用性を意識した開発に取り組んでいます。
+</p>
+<h3>経歴</h3>
+<ul class="career-list">
+<li>2021年4月 工学院大学付属高等学校 入学</li>
+<li>2024年3月 工学院大学付属高等学校 卒業</li>
+<li>2024年4月 工学院大学情報学部情報通信工学科 入学</li>
+</ul>
+</div>
+
+<div class="box">
+<h2 class="heading-11">スキル</h2>
+<div class="skill-group">
+    <h3>-programming Languages-</h3>
+    <ul>
+        <li>
+            Java/C言語<br>
+            <small>大学課程で基本的な文法を習得</small>
+        </li>
+        <li>
+            Python<br>
+            <small>「タスク管理アプリ」製作に使用</small>
+        </li>
+    </ul>
+</div>
+<div class="skill-group">
+    <h3>-Tools-</h3>
+    <ul>
+        <li>Blender</li>
+        <li>Filmora</li>
+    </ul>
+</div>
+
+<div class="skill-group">
+    <h3>-Certifications-</h3>
+    <ul>
+        <li>ITパスポート</li>
+        <li>基本情報技術者</li>
+    </ul>
+</div>
+</div>
+
+<div class="box">
+<h2 class="heading-11">製作物</h2>
+
+<div class="work">
+
+<img src="task managemanet.png" class="work-img">
+<div class="work-text">
+<p><strong>タスク管理アプリ</strong></p>
+<p>
+タスクの追加・削除・日付管理・並び替え機能を実装しました。<br>
+Enterキーでも追加可能で使いやすさを意識しました。
+</p>
+<video controls class="video">
+    <source src="video.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+
+<br>
+
+<a class="button" href="task_app.exe" >
+    タスク管理アプリをダウンロード（Windows環境で動作確認済み）
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
